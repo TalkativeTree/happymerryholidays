@@ -5,6 +5,14 @@ Turkeythanks::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  post 'thanksgiving/new' => 'catalog#new'
+  post 'christmas/new' => 'catalog#new'
+  post 'hanukkah/new' => 'catalog#new'
+
+  get 'thanksgiving/:url' => 'catalog#thanksgreeting'
+  get 'christmas/:url' => 'catalog#christmas'
+  get 'hanukkah/:url' => 'catalog#hanukkah'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
