@@ -1,0 +1,59 @@
+@media screen and (min-width: 901px){
+  .tree-options {
+    position: relative;
+  }
+  .triangle-tree {
+    position: absolute;
+    top:2em;
+    width: 40em;
+    height: 50em;
+  }
+  .tree-top {
+    position: absolute;
+    left: 14em;
+    top: 0;
+    width: 0em;
+    height: 0em;
+    border-left: 6em solid transparent;
+    border-right: 6em solid transparent;
+    border-bottom: 10em solid green;
+  }
+  .tree-top-middle {
+    position: absolute;
+    left: 12em;
+    top: 3em;
+    width: 0em;
+    height: 0em;
+    border-left: 8em solid transparent;
+    border-right: 8em solid transparent;
+    border-bottom: 13em solid green;
+  }
+  .tree-bottom-middle {
+    position: absolute;
+    left: 10em;
+    top: 6em;
+    width: 0em;
+    height: 0em;
+    border-left: 10em solid transparent;
+    border-right: 10em solid transparent;
+    border-bottom: 16em solid green;
+  }
+  .tree-bottom {
+    position: absolute;
+    left: 8em;
+    top: 9em;
+    width: 0em;
+    height: 0em;
+    border-left: 12em solid transparent;
+    border-right: 12em solid transparent;
+    border-bottom: 19em solid green;
+  }
+  .tree-base{
+    position: absolute;
+    top: 28em;
+    left: 18.5em;
+    width: 2em;
+    height:4em;
+    background-color: brown;
+  }
+}
