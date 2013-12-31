@@ -1,7 +1,22 @@
-body{
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+         -box-sizing: border-box;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.background{
   width: 100%;
   height: 100%;
-  background-image: url(image-path("green_gobbler.png"));
+  background-image: asset-url("green_gobbler.png");
+  background-repeat: repeat;
 }
 h1{
   width: 100%;
