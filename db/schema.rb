@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 20131223070431) do
 
   create_table "cards", force: true do |t|
     t.string   "url"
-    t.string   "sender_name"
-    t.string   "receiver_name"
+    t.string   "to_email"
+    t.string   "subject"
     t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
