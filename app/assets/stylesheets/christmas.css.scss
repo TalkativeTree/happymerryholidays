@@ -382,12 +382,6 @@ html,body {
 }
 
 /* MESSAGE AREA  */
-.tree-options {
-  position: absolute;
-  top:80px;
-  width: 320px;
-  height: 320px;
-}
 
 .message {
   position: absolute;
@@ -639,6 +633,13 @@ html,body {
 }
 
 */
+
+.tree-options {
+  position: absolute;
+  top:80px;
+  width: 320px;
+  height: 320px;
+}
 /*______________ ORNAMENTS ______________*/
 .ornament{
   position: absolute;
@@ -1339,7 +1340,7 @@ html,body {
 }*/
 
 /* ______________ FLOOR ______________*/
-.floor {
+/*.floor {
   position: absolute;
   top: 18em;
   left: 0em;
@@ -1394,11 +1395,11 @@ border-top: 0.5em solid brown;
     -ms-transform-origin: 0% 100%;
      -o-transform-origin: 0% 100%;
         transform-origin: 0% 100%;
-}
+}*/
 
 
 /*__________________ BOARDS __________________*/
-
+/*
 .board {
   position: absolute;
   top:1em;
@@ -1680,7 +1681,7 @@ border-top: 0.5em solid brown;
 /*
 every 30 add a new board
 MAKE THESE DISAPEAR BETWEEN*/
-@media screen and (min-width:780px) {
+/*@media screen and (min-width:780px) {
   .board:nth-child(21){
     left: 27em;
     -webkit-transform: rotate(0deg);
@@ -1739,9 +1740,9 @@ MAKE THESE DISAPEAR BETWEEN*/
        -o-transform-origin: 100% 0%;
           transform-origin: 100% 0%;
   }
-}
+}*/
 /*______________ THE WALL ______________*/
-
+/*
 .wall{
   position: absolute;
   background-color: #ffe3ce;
@@ -1771,7 +1772,7 @@ MAKE THESE DISAPEAR BETWEEN*/
 }
 .left-wall{
 
-}
+}*/
 @-webkit-keyframes pulsate {
     0% {opacity: 0.0;}
     50% {opacity: 1.0;}
