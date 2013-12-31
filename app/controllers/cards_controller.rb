@@ -1,6 +1,6 @@
 class CardsController < ApplicationController
 
-  before_action :set_namespace
+  before_action :set_type
 
   def new
     @card = Card.new
@@ -26,7 +26,7 @@ class CardsController < ApplicationController
   end
 
   private
-  def set_namespace
+  def set_type
     @type = if ["christmas", "thanksgiving", "hannukah"].include?(params[:type])
               params[:type]
             else
