@@ -27,9 +27,6 @@ gem 'jquery-rails'
 # gem 'jbuilder', '~> 1.2'
 
 
-gem 'stripe', git: 'https://github.com/stripe/stripe-ruby'
-
-gem 'sidekiq'
 gem 'sinatra', '>= 1.3.0', require: nil
 gem 'stamp'
 
