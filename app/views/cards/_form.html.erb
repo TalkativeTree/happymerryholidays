@@ -1,0 +1,11 @@
+  <%= form_for @card, url: {action: "create"}, controller: :cards, action: :create,  method: :post, html: {:class => "create-card"} do |f| %><!--
+    <%= f.text_field :subject, value:  "Merry Christmas from Insert Name"%>
+    <br> -->
+    <%= f.text_area :message, rows: "15", value:  "Dear _____, \n \n Have a Merry Christmas! \n \n Love,"%>
+    <br><!--
+    <%= f.email_field :to_email, placeholder: "Their Email"%>
+    <br> -->
+    <%= f.text_field :url, placeholder: "Customize your link" %>
+    <br>
+    <%= f.submit "Create Card", :class => "button" %>
+<% end %>

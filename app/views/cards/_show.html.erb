@@ -1,0 +1,9 @@
+<% if @card %>
+  <div id="card_message">
+  <% @card.message.split("\n").each do |t| %>
+    <p>
+      <%= t %>
+    </p>
+  <% end %>
+  </div>
+<% end %>
