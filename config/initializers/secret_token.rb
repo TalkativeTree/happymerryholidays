@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Turkeythanks::Application.config.secret_key_base = '220418ac31bcbd898ac144ef1e2c62bfd82971d07b5ee6d8a5f610f1f31aee9c12e7cec8e9ecd72f3adca3714ab17c64a291fda54492a2962ca40ebf188ce446'
+Happymerryholidays::Application.config.secret_key_base = '220418ac31bcbd898ac144ef1e2c62bfd82971d07b5ee6d8a5f610f1f31aee9c12e7cec8e9ecd72f3adca3714ab17c64a291fda54492a2962ca40ebf188ce446'

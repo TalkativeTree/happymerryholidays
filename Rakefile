@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Turkeythanks::Application.load_tasks
+Happymerryholidays::Application.load_tasks
