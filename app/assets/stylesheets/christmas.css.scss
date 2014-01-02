@@ -1,3 +1,4 @@
+@import 'mixins';
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -61,10 +62,7 @@ html,body {
     position: absolute;
     top:25px;
     left:25px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(3){
     position: absolute;
@@ -75,10 +73,7 @@ html,body {
     position: absolute;
     top:115px;
     left:75px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(5){
     position: absolute;
@@ -89,10 +84,7 @@ html,body {
     position: absolute;
     top:35px;
     left:325px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(7){
     position: absolute;
@@ -103,10 +95,7 @@ html,body {
     position: absolute;
     top:15px;
     left:625px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(9){
     position: absolute;
@@ -117,10 +106,7 @@ html,body {
     position: absolute;
     top:225px;
     left:35px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(11){
     position: absolute;
@@ -131,10 +117,7 @@ html,body {
     position: absolute;
     top:35px;
     left:125px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(13){
     position: absolute;
@@ -145,9 +128,7 @@ html,body {
     position: absolute;
     top:125px;
     left:355px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(15){
     position: absolute;
@@ -158,9 +139,7 @@ html,body {
     position: absolute;
     top:125px;
     right:25px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(17){
     position: absolute;
@@ -171,10 +150,7 @@ html,body {
     position: absolute;
     top:35px;
     right:145px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(19){
     position: absolute;
@@ -185,10 +161,7 @@ html,body {
     position: absolute;
     top:215px;
     right:calc(10% - 5px);
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(21){
     position: absolute;
@@ -199,10 +172,7 @@ html,body {
     position: absolute;
     top:55px;
     left:545px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(23){
     position: absolute;
@@ -213,10 +183,7 @@ html,body {
     position: absolute;
     top:45px;
     left:445px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
+    @include rotate(90);
   }
   &:nth-child(25){
     position: absolute;
@@ -227,10 +194,7 @@ html,body {
     position: absolute;
     top:225px;
     left:415px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
+    @include rotate(90);
   }
 }
 .twinkler {
@@ -260,10 +224,7 @@ html,body {
   content: "";
   border-radius: 60px;
   background-color: yellow;
-  -webkit-transform: rotate(10deg);
-     -moz-transform: rotate(10deg);
-      -ms-transform: rotate(10deg);
-       -o-transform: rotate(10deg);
+  @include rotate(10);
   &:after{
     position: absolute;
     content: "";
@@ -455,11 +416,7 @@ html,body {
     content:"";
     position: absolute;
     /* Rotate */
-    -webkit-transform: rotate(30deg);
-       -moz-transform: rotate(30deg);
-        -ms-transform: rotate(30deg);
-         -o-transform: rotate(30deg);
-            transform: rotate(30deg);
+    @include rotate(30);
   }
 
   &:after {
@@ -469,11 +426,7 @@ html,body {
      content:"";
      position: absolute;
      /* Rotate */
-     -moz-transform: rotate(-30deg);
-     -webkit-transform: rotate(-30deg);
-     -ms-transform: rotate(-30deg);
-     -o-transform: rotate(-30deg);
-     transform: rotate(-30deg);
+     @include rotate(-30);
   }
 }
 .present-front{
@@ -583,10 +536,7 @@ html,body {
   height: 50px;
   width: 48px;
   background-color: #8e0000;
-  -webkit-transform: rotate(30deg);
-     -moz-transform: rotate(30deg);
-      -ms-transform: rotate(30deg);
-       -o-transform: rotate(30deg);
+  @include rotate(30);
 }
 .present-bottom{
   position: absolute;
@@ -595,10 +545,7 @@ html,body {
   height: 50px;
   width: 48px;
   background-color: #8e0000;
-  -webkit-transform: rotate(30deg);
-     -moz-transform: rotate(30deg);
-      -ms-transform: rotate(30deg);
-       -o-transform: rotate(30deg);
+  @include rotate(30);
 }*/
 /*.present-front .line:nth-child(1){
    position: absolute;
@@ -677,11 +624,7 @@ html,body {
         -ms-border-radius: 6px;
          -o-border-radius: 6px;
             border-radius: 6px;
-  -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  @include rotate(45);
   }
 }
 .twinkle {
@@ -862,10 +805,7 @@ html,body {
    border-bottom: 21px  solid #febe00;
    border-left:   30px solid transparent;
    -moz-transform:    rotate(35deg);
-   -webkit-transform: rotate(35deg);
-   -ms-transform:     rotate(35deg);
-   -o-transform:      rotate(35deg);
-   transform:      rotate(35deg);
+   @include rotate(35);
 
   &:before {
     content: '';
@@ -878,10 +818,7 @@ html,body {
     top: -15px;
     left: -19px;
     display: block;
-    -webkit-transform: rotate(-35deg);
-    -moz-transform:    rotate(-35deg);
-    -ms-transform:     rotate(-35deg);
-    -o-transform:      rotate(-35deg);
+    @include rotate(-35);
     transform:      rotate(-35deg);
   }
   &:after {
@@ -896,10 +833,7 @@ html,body {
     border-right: 30px solid transparent;
     border-bottom: 21px solid #febe00;
     border-left: 30px solid transparent;
-    -webkit-transform: rotate(-70deg);
-    -moz-transform:    rotate(-70deg);
-    -ms-transform:     rotate(-70deg);
-    -o-transform:      rotate(-70deg);
+    @include rotate(-70);
   }
 }
 
@@ -922,10 +856,7 @@ html,body {
       border-right: 24px solid transparent;
       border-left: 7px solid transparent;
       border-bottom: 14px solid #e8b005;
-      -webkit-transform: rotate(-115deg);
-      -moz-transform:    rotate(-115deg);
-      -ms-transform:     rotate(-115deg);
-      -o-transform:      rotate(-115deg);
+      @include rotate(-115);
     }
   }
 .tree-top {
@@ -1410,11 +1341,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(1){
   left: 5em;
-  -webkit-transform: rotate(30deg);
-   -moz-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-     -o-transform: rotate(30deg);
-        transform: rotate(30deg);
+  @include rotate(30);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1423,11 +1350,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(2){
   left: 7em;
-  -webkit-transform: rotate(27deg);
-   -moz-transform: rotate(27deg);
-    -ms-transform: rotate(27deg);
-     -o-transform: rotate(27deg);
-        transform: rotate(27deg);
+  @include rotate(27);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1436,11 +1359,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(3){
   left: 9em;
-  -webkit-transform: rotate(24deg);
-   -moz-transform: rotate(24deg);
-    -ms-transform: rotate(24deg);
-     -o-transform: rotate(24deg);
-        transform: rotate(24deg);
+  @include rotate(24);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1449,11 +1368,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(4){
   left: 11em;
-  -webkit-transform: rotate(21deg);
-   -moz-transform: rotate(21deg);
-    -ms-transform: rotate(21deg);
-     -o-transform: rotate(21deg);
-        transform: rotate(21deg);
+  @include rotate(21);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1462,11 +1377,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(5){
   left: 13em;
-  -webkit-transform: rotate(18deg);
-   -moz-transform: rotate(18deg);
-    -ms-transform: rotate(18deg);
-     -o-transform: rotate(18deg);
-        transform: rotate(18deg);
+  @include rotate(18);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1475,11 +1386,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(6){
   left: 15em;
-  -webkit-transform: rotate(15deg);
-   -moz-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-     -o-transform: rotate(15deg);
-        transform: rotate(15deg);
+  @include rotate(15);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1488,11 +1395,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(7){
   left: 17em;
-  -webkit-transform: rotate(12deg);
-   -moz-transform: rotate(12deg);
-    -ms-transform: rotate(12deg);
-     -o-transform: rotate(12deg);
-        transform: rotate(12deg);
+  @include rotate(12);
   -webkit-transform-origin: 100% 0%;
    -moz-t11ansform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1501,11 +1404,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(8){
   left: 19em;
-  -webkit-transform: rotate(9deg);
-   -moz-transform: rotate(9deg);
-    -ms-transform: rotate(9deg);
-     -o-transform: rotate(9deg);
-        transform: rotate(9deg);
+  @include rotate(9);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1514,11 +1413,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(9){
   left: 21em;
-  -webkit-transform: rotate(6deg);
-   -moz-transform: rotate(6deg);
-    -ms-transform: rotate(6deg);
-     -o-transform: rotate(6deg);
-        transform: rotate(6deg);
+  @include rotate(6);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1527,11 +1422,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(10){
   left: 23em;
-  -webkit-transform: rotate(3deg);
-   -moz-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-     -o-transform: rotate(3deg);
-        transform: rotate(3deg);
+  @include rotate(3);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1541,11 +1432,7 @@ border-top: 0.5em solid brown;
 
 .board:nth-child(11){
   left: 25em;
-  -webkit-transform: rotate(1deg);
-   -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-     -o-transform: rotate(1deg);
-        transform: rotate(1deg);
+  @include rotate(1);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1555,11 +1442,7 @@ border-top: 0.5em solid brown;
 @media (min-width: 740px) {
   .board:nth-child(12){
     right: 20em;
-    -webkit-transform: rotate(-3deg);
-     -moz-transform: rotate(-3deg);
-      -ms-transform: rotate(-3deg);
-       -o-transform: rotate(-3deg);
-          transform: rotate(-3deg);
+    @include rotate(-3);
     -webkit-transform-origin: 100% 0%;
      -moz-transform-origin: 100% 0%;
       -ms-transform-origin: 100% 0%;
@@ -1569,11 +1452,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(13){
   right: 18em;
-  -webkit-transform: rotate(-6deg);
-   -moz-transform: rotate(-6deg);
-    -ms-transform: rotate(-6deg);
-     -o-transform: rotate(-6deg);
-        transform: rotate(-6deg);
+  @include rotate(-6);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1583,11 +1462,7 @@ border-top: 0.5em solid brown;
 
 .board:nth-child(14){
   right: 16em;
-  -webkit-transform: rotate(-9deg);
-   -moz-transform: rotate(-9deg);
-    -ms-transform: rotate(-9deg);
-     -o-transform: rotate(-9deg);
-        transform: rotate(-9deg);
+  @include rotate(-9);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1596,11 +1471,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(15){
   right: 14em;
-  -webkit-transform: rotate(-12deg);
-   -moz-transform: rotate(-12deg);
-    -ms-transform: rotate(-12deg);
-     -o-transform: rotate(-12deg);
-        transform: rotate(-12deg);
+  @include rotate(-12);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1609,11 +1480,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(16){
   right: 12em;
-  -webkit-transform: rotate(-15deg);
-   -moz-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
-     -o-transform: rotate(-15deg);
-        transform: rotate(-15deg);
+  @include rotate(-15);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1622,11 +1489,7 @@ border-top: 0.5em solid brown;
 }
 .board:nth-child(17){
   right: 10em;
-  -webkit-transform: rotate(-18deg);
-   -moz-transform: rotate(-18deg);
-    -ms-transform: rotate(-18deg);
-     -o-transform: rotate(-18deg);
-        transform: rotate(-18deg);
+  @include rotate(-18);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1636,11 +1499,7 @@ border-top: 0.5em solid brown;
 .board:nth-child(18){
   height: 20em;
   right: 8em;
-  -webkit-transform: rotate(-21deg);
-   -moz-transform: rotate(-21deg);
-    -ms-transform: rotate(-21deg);
-     -o-transform: rotate(-21deg);
-        transform: rotate(-21deg);
+  @include rotate(-21);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1650,11 +1509,7 @@ border-top: 0.5em solid brown;
 .board:nth-child(19){
   height: 14em;
   right: 6em;
-  -webkit-transform: rotate(-24deg);
-   -moz-transform: rotate(-24deg);
-    -ms-transform: rotate(-24deg);
-     -o-transform: rotate(-24deg);
-        transform: rotate(-24deg);
+  @include rotate(-24);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1664,11 +1519,7 @@ border-top: 0.5em solid brown;
 .board:nth-child(20){
   height: 8.5em;
   right: 4em;
-  -webkit-transform: rotate(-27deg);
-   -moz-transform: rotate(-27deg);
-    -ms-transform: rotate(-27deg);
-     -o-transform: rotate(-27deg);
-        transform: rotate(-27deg);
+  @include rotate(-27);
   -webkit-transform-origin: 100% 0%;
    -moz-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -1684,11 +1535,7 @@ MAKE THESE DISAPEAR BETWEEN*/
 /*@media screen and (min-width:780px) {
   .board:nth-child(21){
     left: 27em;
-    -webkit-transform: rotate(0deg);
-       -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
-            transform: rotate(0deg);
+    @include rotate(0);
     -webkit-transform-origin: 100% 0%;
        -moz-transform-origin: 100% 0%;
         -ms-transform-origin: 100% 0%;
@@ -1699,11 +1546,7 @@ MAKE THESE DISAPEAR BETWEEN*/
 @media screen and (min-width:810px) {
   .board:nth-child(22){
     left: 29em;
-    -webkit-transform: rotate(-1deg);
-       -moz-transform: rotate(-1deg);
-        -ms-transform: rotate(-1deg);
-         -o-transform: rotate(-1deg);
-            transform: rotate(-1deg);
+    @include rotate(-1);
     -webkit-transform-origin: 100% 0%;
        -moz-transform-origin: 100% 0%;
         -ms-transform-origin: 100% 0%;
@@ -1714,11 +1557,7 @@ MAKE THESE DISAPEAR BETWEEN*/
 @media screen and (min-width:840px) {
   .board:nth-child(23){
     left: 31em;
-    -webkit-transform: rotate(-1deg);
-       -moz-transform: rotate(-1deg);
-        -ms-transform: rotate(-1deg);
-         -o-transform: rotate(-1deg);
-            transform: rotate(-1deg);
+    @include rotate(-1);
     -webkit-transform-origin: 100% 0%;
        -moz-transform-origin: 100% 0%;
         -ms-transform-origin: 100% 0%;
@@ -1729,11 +1568,7 @@ MAKE THESE DISAPEAR BETWEEN*/
 @media screen and (min-width:880px) {
   .board:nth-child(24){
     left: 33em;
-    -webkit-transform: rotate(-1deg);
-     -moz-transform: rotate(-1deg);
-      -ms-transform: rotate(-1deg);
-       -o-transform: rotate(-1deg);
-          transform: rotate(-1deg);
+    @include rotate(-1);
     -webkit-transform-origin: 100% 0%;
      -moz-transform-origin: 100% 0%;
       -ms-transform-origin: 100% 0%;
