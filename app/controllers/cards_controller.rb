@@ -33,12 +33,8 @@ class CardsController < ApplicationController
               '/'
             end
   end
-private
-    # Using a private method to encapsulate the permissible parameters is
-    # just a good pattern since you'll be able to reuse the same permit
-    # list between create and update. Also, you can specialize this method
-    # with per-user checking of permissible attributes.
-    def card_params
-      params.require(:card).permit(:url, :message, :to_email, :subject)
-    end
+
+  def card_params
+    params.require(:card).permit(:url, :message, :to_email, :subject)
+  end
 end
