@@ -213,8 +213,8 @@ html,body {
 /* __________ MOON ________*/
 .moon{
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 10%;
+  top: 8%;
   height: 60px;
   width: 60px;
   content: "";
@@ -333,11 +333,11 @@ html,body {
 
 .message {
   position: absolute;
-  padding: 20px;
-  width: 30%;
+  padding: 20px 0 20px 0;
+  width: 35%;
   min-width: 280px;
-  left: 500px;
-  top: 15%;
+  left: 30em;
+  top: 8em;
   background-color: #d2dae5;
   & #card_subject{
     border: transparent;
@@ -354,7 +354,8 @@ html,body {
     max-width: 90%;
     font-family: 'Handlee', cursive;
     letter-spacing: 1px;
-
+    padding: 5px;
+    font-size: 16px;
   }
   & #card_to_email{
     border: transparent;
