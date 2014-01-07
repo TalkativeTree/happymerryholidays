@@ -10,8 +10,11 @@ html,body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 .background{
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   background-image: asset-url("green_gobbler.png");
@@ -28,21 +31,26 @@ h1{
   font-size: 5em;
   margin: 0 0 0 0
 }
-
+.turkey{
+  z-index: 1;
+  position: relative;
+  top: 6em;
+  left: 5em;
+}
 .invite{
   position: absolute;
   font-family: 'Loved by the King', cursive;
   top: 30px;
   left: 40px;
-  z-index: 15;
   font-size: 3em;
 }
 
 .speech_bubble {
+  z-index: 2;
   position: absolute;
-  bottom: 100px;
+  top: 350px;
   left: 700px;
-  width: 420px;
+  width: 320px;
   height: 280px;
   background: #764000;
   -moz-border-radius: 10px;
@@ -66,7 +74,7 @@ h1{
   position: absolute;
   bottom: 10px;
   left: 10px;
-  width: 400px;
+  width: 300px;
   height: 260px;
   background: #fff0dd;
   -moz-border-radius: 10px;
@@ -132,6 +140,7 @@ h1{
 
 .eyes{
   position: relative;
+  left: 0px;
   top: 35px;
   width: 100%;
   height: 50px;
@@ -212,7 +221,6 @@ h1{
 
 .butt{
   position: absolute;
-  z-index: 10;
   width: 350px;
   height: 300px;
   bottom: 60px;
