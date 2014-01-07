@@ -4,7 +4,7 @@ class CardsController < ApplicationController
 
   def new
     @card = Card.new
-    @partial = 'form'
+    @partial = 'partials/form'
     render @type
   end
 
@@ -13,13 +13,14 @@ class CardsController < ApplicationController
     if @card.save
       redirect_to action: 'show', type: @type, url: @card.url
     else
+      @partial = 'partials/form'
       render @type
     end
   end
 
   def show
-    print params
-    @partial = 'show'
+    puts params
+    @partial = 'partials/show'
     @card = Card.where(url: params[:url]).first
     puts @card.inspect
     render @type

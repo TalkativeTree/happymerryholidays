@@ -339,6 +339,17 @@ html,body {
   left: 30em;
   top: 8em;
   background-color: #d2dae5;
+  & .error{
+    border-bottom: 1px solid #CCC;
+    border-bottom-color: #BBB;
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+    padding: 5px 0 5px 0;
+    margin: 0 5% 0% 5%;
+    text-align: center;
+  }
   & #card_subject{
     border: transparent;
     border-width: 0;
