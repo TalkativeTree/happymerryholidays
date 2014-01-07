@@ -1,6 +1,12 @@
+.cards{
+  position: relative;
+  top:30%;
+  left: 0;
+  height: 0;
+}
 /*_______ TREE ______*/
 .christmas{
-  position: relative;
+  position: absolute;
   top:40%;
   left: 30%;
 }
@@ -151,7 +157,7 @@
 /*_____ TURKEY _____*/
 .turkey{
   position: relative;
-  top: 12em;
+  top: 6em;
   left: 50%;
 }
 .head {
@@ -876,12 +882,16 @@ and (max-device-width : 480px) {
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-width : 480px) {
+  .cards{
+    top: 10%;
+  }
   .turkey{
-    left: 30%;
-    top: 25em;
+    left: 25%;
+    top: 20em;
   }
   .christmas{
-    left: 35%;
+    top:   2em;
+    left: 30%;
   }
 }
 @media only screen and (min-width : 481px) and (max-width : 720px) {
@@ -889,6 +899,7 @@ and (max-device-width : 480px) {
     left: 20%;
   }
   .turkey{
+    top:   6em;
     left: 50%;
   }
 }
