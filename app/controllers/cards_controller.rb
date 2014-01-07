@@ -25,7 +25,7 @@ class CardsController < ApplicationController
     if @card
       render @type
     else
-       render :file => "#{Rails.root}/public/404", :layout => false, :status => :not_found
+      render_404
     end
   end
 
