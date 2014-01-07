@@ -58,6 +58,11 @@
   </div>
 </div>
 <div class="message">
+  <% if @card.errors.any? %>
+    <% @card.errors.full_messages.each do |error| %>
+      <p class="error"> <%= error %> </p>
+    <% end %>
+  <% end %>
   <%= render partial: @partial, card: @card%>
 </div>
 <div class="tree-options">

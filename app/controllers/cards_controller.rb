@@ -22,8 +22,11 @@ class CardsController < ApplicationController
     puts params
     @partial = 'partials/show'
     @card = Card.where(url: params[:url]).first
-    puts @card.inspect
-    render @type
+    if @card
+      render @type
+    else
+       render :file => "#{Rails.root}/public/404", :layout => false, :status => :not_found
+    end
   end
 
   private
