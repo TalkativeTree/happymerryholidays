@@ -139,13 +139,13 @@ html,body {
   }
   &:nth-child(17){
     position: absolute;
-    top:30px;
-    right:150px;
+    top:60px;
+    right:250px;
   }
   &:nth-child(18){
     position: absolute;
-    top:35px;
-    right:145px;
+    top:65px;
+    right:245px;
     @include rotate(90);
   }
   &:nth-child(19){
@@ -192,6 +192,28 @@ html,body {
     left:415px;
     @include rotate(90);
   }
+  &:nth-child(27){
+    position: absolute;
+    top:40px;
+    left:65%;
+  }
+  &:nth-child(28){
+    position: absolute;
+    top:45px;
+    left: calc(65% + 5px);
+    @include rotate(90);
+  }
+  &:nth-child(29){
+    position: absolute;
+    top:55%;
+    right:12%;
+  }
+  &:nth-child(30){
+    position: absolute;
+    top:calc(55% + 5px);
+    right: calc(12% - 5px);
+    @include rotate(90);
+  }
 }
 .twinkler {
   width: 0;
@@ -214,7 +236,7 @@ html,body {
 .moon{
   position: absolute;
   right: 10%;
-  top: 8%;
+  top: 6%;
   height: 60px;
   width: 60px;
   content: "";
