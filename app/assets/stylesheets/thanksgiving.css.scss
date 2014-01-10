@@ -422,7 +422,7 @@ h1{
 }
 .wings{
   position: absolute;
-  z-index: 7;
+  z-index: -1;
   width: 400px;
   height: 260px;
   bottom: 80px;
@@ -437,6 +437,7 @@ h1{
   width: 600px;
 }
 .feather {
+  z-index:-1;
   position: relative;
   left: 440px;
   bottom: 150px
